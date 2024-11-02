@@ -57,6 +57,14 @@ require("lazy").setup({
   {'hrsh7th/cmp-cmdline'}, 
   {'hrsh7th/nvim-cmp'},
   {'neovim/nvim-lspconfig'},
+  {
+    'nvim-telescope/telescope.nvim',
+    tag = '0.1.8',
+    dependencies = { 'nvim-lua/plenary.nvim' }
+  },
+
+-- Rust
+  {"simrat39/rust-tools.nvim"},
 
 -- Themes
   { 'sainnhe/sonokai' },

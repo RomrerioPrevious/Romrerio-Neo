@@ -5,4 +5,8 @@ function SetColor(color)
     vim.cmd.colorscheme(color)
 end
 
+-- ayu-mirage
+-- monokai_pro
+
 SetColor("ayu-mirage")
+

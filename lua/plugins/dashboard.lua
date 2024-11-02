@@ -24,7 +24,7 @@ require('dashboard').setup {
                 key = 'f',
                 keymap = 'SPC f f',
                 key_hl = 'Number',
-                action = ''
+                action = ':Telescope find_files'
             }, {
 				icon = '󰱾 ',
                 icon_hl = 'Title',
@@ -42,7 +42,7 @@ require('dashboard').setup {
                 key = 'w',
                 keymap = 'SPC f w',
                 key_hl = 'Number',
-                action = ''
+                action = ':Telescope live_grep'
             }, {
                 icon = ' ',
                 icon_hl = 'Title',
@@ -51,7 +51,7 @@ require('dashboard').setup {
                 key = 'b',
                 keymap = 'SPC g b',
                 key_hl = 'Number',
-                action = ''
+                action = ':Telescope git_branches'
             }
 
         }

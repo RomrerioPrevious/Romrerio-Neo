@@ -12,3 +12,6 @@ vim.opt.smartindent = true
 -- MOUSE
 vim.opt.mouse = "a"
 vim.opt.mousefocus = true
+
+-- CURSOR
+vim.opt.scrolloff = 2

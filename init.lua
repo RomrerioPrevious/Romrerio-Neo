@@ -8,7 +8,6 @@ require('core.colors')
 -- PLUGINS
 
 require("plugins.dashboard")
-require("plugins.treesitter")
 require("plugins.autopairs")
 require("plugins.bufferline")
 require("plugins.toggleterm")
@@ -16,3 +15,4 @@ require("plugins.lualine")
 require("plugins.telescope")
 require("plugins.cmp")
 require("plugins.lsp")
+require("plugins.neotree")

@@ -8,5 +8,5 @@ end
 -- ayu-mirage
 -- monokai_pro
 
-SetColor("ayu-mirage")
+SetColor()
 

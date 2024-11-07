@@ -2,7 +2,16 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 -- Sntup language servers.
 local lspconfig = require('lspconfig')
-lspconfig.pyright.setup {}
+lspconfig.pyright.setup {
+    cmd = { 'C://Users//Asus//AppData//Roaming//Python//Python310//Scripts//pyright.exe' },
+    settings = {
+        python = {
+            analysis = {
+                useLibraryCodeForTypes = true
+            }
+        }
+    }
+}
 lspconfig.prismals.setup {}
 lspconfig.cssls.setup {
     capabilities = capabilities

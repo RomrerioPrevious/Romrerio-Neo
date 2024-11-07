@@ -41,9 +41,9 @@ require("lazy").setup({
       "nvim-lua/plenary.nvim",
       "nvim-tree/nvim-web-devicons",
       "MunifTanjim/nui.nvim",
+      "s1n7ax/nvim-window-picker",
     }
   },
-  { 'nvim-treesitter/nvim-treesitter' },
   { 'windwp/nvim-autopairs' },
   {"akinsho/bufferline.nvim", dependencies = {'nvim-tree/nvim-web-devicons'}},
   {'akinsho/toggleterm.nvim', version = "*", config = true},

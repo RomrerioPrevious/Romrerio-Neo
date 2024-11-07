@@ -1,4 +1,21 @@
-require("toggleterm").setup {open_mapping = [[<c-\>]]}
+function create_term(path)
+    require("toggleterm").setup ({
+        open_mapping = [[<c-\>]],
+        close_mapping = [[<c-\>]],
+        highlights = {
+            
+        },
+        shell = path,
+    })    
+end
+
+local osName = os.getenv("OS")
+
+if osName == "Windows_NT" then 
+   create_term("C://Windows//System32//WindowsPowerShell//v1.0//powershell.exe") 
+else
+    create_term(vim.o.shell)
+end
 
 function _G.set_terminal_keymaps()
     local opts = {buffer = 0}
@@ -10,5 +27,3 @@ function _G.set_terminal_keymaps()
     vim.keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
     vim.keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]], opts)
 end
-
-vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')

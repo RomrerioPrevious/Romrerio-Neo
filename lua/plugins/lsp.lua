@@ -3,8 +3,7 @@ capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 -- Sntup language servers.
 local lspconfig = require('lspconfig')
 lspconfig.pyright.setup {
-    cmd = { 'C://Users//Asus//AppData//Roaming//Python//Python310//Scripts//pyright.exe' },
-    settings = {
+    setings = {
         python = {
             analysis = {
                 useLibraryCodeForTypes = true

@@ -1,9 +1,9 @@
 -- Basic
 
-require('core.plugins')
-require('core.mappings')
-require('core.config')
-require('core.colors')
+require("core.plugins")
+require("core.mappings")
+require("core.config")
+require("core.colors")
 
 -- PLUGINS
 
@@ -16,3 +16,4 @@ require("plugins.telescope")
 require("plugins.cmp")
 require("plugins.lsp")
 require("plugins.neotree")
+require("plugins.treesitter")

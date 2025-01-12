@@ -63,6 +63,8 @@ require("lazy").setup({
     dependencies = { 'nvim-lua/plenary.nvim' }
   },
 
+  {"nvim-treesitter/nvim-treesitter"},
+
 -- Rust
   {"simrat39/rust-tools.nvim"},
 
